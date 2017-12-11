@@ -73,7 +73,7 @@ const createCat = function(image, name, favouriteFood) {
   const CatFavouriteFood = createFavouriteFood(favouriteFood);
   const imageLi = createImageLi();
   const createImg = createImage(image);
-  addElements(ul, createImg, Catname, CatFavouriteFoodLi, imageLi)
+  appendElements(ul, createImg, Catname, CatFavouriteFood, imageLi)
 }
 
 document.addEventListener('DOMContentLoaded', app);
