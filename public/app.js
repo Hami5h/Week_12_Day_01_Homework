@@ -58,7 +58,7 @@ const createImage = function(url) {
   return image;
 }
 
-const addElements = function(ul, image, name, favouriteFood, imageLi) {
+const appendElements = function(ul, image, name, favouriteFood, imageLi) {
   imageLi.appendChild(image);
   ul.appendChild(name);
   ul.appendChild(favouriteFood);
@@ -69,11 +69,11 @@ const addElements = function(ul, image, name, favouriteFood, imageLi) {
 
 const createCat = function(image, name, favouriteFood) {
   const ul = createUl();
-  const nameLi = createName(name);
-  const favouriteFoodLi = createFavouriteFood(favouriteFood);
+  const Catname = createName(name);
+  const CatFavouriteFood = createFavouriteFood(favouriteFood);
   const imageLi = createImageLi();
   const createImg = createImage(image);
-  addElements(ul, createImg, nameLi, favouriteFoodLi, imageLi)
+  addElements(ul, createImg, Catname, CatFavouriteFoodLi, imageLi)
 }
 
 document.addEventListener('DOMContentLoaded', app);
